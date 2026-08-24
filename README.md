@@ -156,6 +156,10 @@ The HTTP service deliberately uses the standard library rather than a web
 framework: five dependencies is a feature, and a service that does one thing
 does not need a router.
 
+### License
+
+MIT. See [LICENSE](LICENSE).
+
 ---
 
 <a id="français"></a>
@@ -314,3 +318,7 @@ forcément la même carte.
 Le service HTTP s'appuie délibérément sur la bibliothèque standard plutôt que
 sur un cadriciel web : cinq dépendances est une qualité, et un service qui fait
 une seule chose n'a pas besoin d'un routeur.
+
+### Licence
+
+MIT. Voir [LICENSE](LICENSE).
