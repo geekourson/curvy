@@ -127,16 +127,16 @@ def test_lajustement_retrouve_la_vraie_formule_avec_un_r2_parfait():
 def test_la_tolerance_de_parcimonie_arbitre_entre_droite_et_sinus():
     """Pourquoi le défaut est ``tol = 0``, figé en test parce que c'est piégeux.
 
-     Sur ``[-1, 1]``, ``sin(x) ≈ x`` : la droite atteint R² = 0,9978 contre 1,0
-     pour le vrai sinus. Une tolérance de parcimonie rend donc la **droite** —
-     défendable au vu des seules données observées, et destructeur en
-     extrapolation où `x` et `sin(x)` divergent.
+    Sur ``[-1, 1]``, ``sin(x) ≈ x`` : la droite atteint R² = 0,9978 contre 1,0
+    pour le vrai sinus. Une tolérance de parcimonie rend donc la **droite** —
+    défendable au vu des seules données observées, et destructeur en
+    extrapolation où `x` et `sin(x)` divergent.
 
-     J'avais posé ça comme un compromis à arbitrer : la tolérance devait acheter
-     de la robustesse au bruit. **La mesure du 2026-08-20 dit qu'elle n'achète
-     rien** — ``tol = 0`` gagne sur l'interpolation *et* sur l'extrapolation
-    . Ce test garde donc le fait, qui reste vrai, sans la conclusion
-     qu'on en tirait.
+    J'avais posé ça comme un compromis à arbitrer : la tolérance devait acheter
+    de la robustesse au bruit. **La mesure du 2026-08-20 dit qu'elle n'achète
+    rien** — ``tol = 0`` gagne sur l'interpolation *et* sur l'extrapolation.
+    Ce test garde donc le fait, qui reste vrai, sans la conclusion qu'on en
+    tirait.
     """
     rng = make_rng(5)
     x = np.linspace(-1, 1, 80)
