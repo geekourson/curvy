@@ -1,0 +1,76 @@
+{
+  "fichier": "testset-v1.jsonl.gz",
+  "sha256": "168d2de58d16a33607149cc91a7722e842c32750772b20f01fe30c7ba9a657c3",
+  "graine": 20260820,
+  "sel_de_partition": "curvy-test-v1",
+  "n_total": 2134,
+  "n_tenu_a_lecart": 1960,
+  "n_hors_distribution": 174,
+  "par_formule": {
+    "gaussienne": 6,
+    "runge": 6,
+    "sinus_haute_frequence": 6,
+    "sigmoide_raide": 6,
+    "oscillation_amortie": 6,
+    "sinus_de_inverse": 6,
+    "logarithme_decale": 6,
+    "racine_de_valeur_absolue": 6,
+    "hyperbole_raide": 6,
+    "sinus_cardinal": 6,
+    "chirp": 6,
+    "x_sinus_de_inverse": 6,
+    "croissance_exponentielle": 6,
+    "pointe_etroite": 6,
+    "coude": 6,
+    "arctangente": 6,
+    "onde_triangulaire": 6,
+    "bessel_j0": 6,
+    "polynome_degre_7": 6,
+    "deux_echelles": 6,
+    "marche_douce_decalee": 6,
+    "marche": 6,
+    "plancher": 6,
+    "par_morceaux": 6,
+    "dent_de_scie": 6,
+    "x_puissance_x": 6,
+    "weierstrass_tronquee": 6,
+    "erf": 6,
+    "cloche_asymetrique": 6
+  },
+  "partition": {
+    "sel": "curvy-test-v1",
+    "n_entrainement": 253082,
+    "n_test": 1998,
+    "par_profondeur": {
+      "3": {
+        "entrainement": 1,
+        "test": 0
+      },
+      "4": {
+        "entrainement": 7,
+        "test": 0
+      },
+      "5": {
+        "entrainement": 194,
+        "test": 48
+      },
+      "6": {
+        "entrainement": 9840,
+        "test": 400
+      },
+      "7": {
+        "entrainement": 61759,
+        "test": 600
+      },
+      "8": {
+        "entrainement": 181281,
+        "test": 950
+      }
+    },
+    "profondeurs_sans_reserve": [
+      3,
+      4
+    ]
+  },
+  "reel_canvas": "non construit — outil de capture en Phase 8"
+}

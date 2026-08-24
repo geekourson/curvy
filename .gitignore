@@ -1,0 +1,27 @@
+# Les jeux de données et les points de reprise vivent sous CURVY_DATA_ROOT,
+# hors de l'arbre de travail. Git ne les voit donc pas, et les deux règles
+# ci-dessous ne servent que si l'on pose CURVY_DATA_ROOT sur un chemin local.
+#
+# Elles sont ancrées par un `/` initial, et ce détail compte : sans ancrage,
+# `data/` attrape n'importe quel répertoire de ce nom à n'importe quelle
+# profondeur, `curvy/data/` compris. Git ignore en silence — `git add` sur un
+# fichier ignoré ne renvoie aucune erreur — et un paquet entier peut ainsi
+# rester invisible pendant des jours, ses propres commits compris.
+.venv
+/data/
+/runs/
+*.ckpt
+*.pt
+*.onnx
+*.npz
+*.npy
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Divers
+.DS_Store
